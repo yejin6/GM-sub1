@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GM</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        color: #333333;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    body {
+    margin: 0;
+    }
+    #logo{
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+        }
+        .test{
+            position: relative;
+        }
+        .material-symbols-outlined{
+            position: absolute;
+            top: 25px;
+            right: 419px;
+            font-size: 30px;
+            font-weight: 300;
+            color: #808080;
+        }
+        .material-symbols-sharp{
+            position: absolute;
+            top: 25px;
+            right: 368px;
+            font-size: 30px;
+            font-weight: 300;
+            color: #808080;
+        }
+        
+        #logo img{
+            vertical-align: middle;
+            height: 24px;
+        }
+        .logo{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #navbar{
+            height: 60px;
+            border-top: solid 1px #EBEBEB;
+            text-align: center;
+        }
+        #menu{
+            margin: 0;
+            padding: 0;
+        }
+        #navbar ul{
+            display: inline-block;
+        }
+        
+        #menu li{
+            float: left;
+            list-style-type: none;
+            line-height: 60px;
+        }
+        #menu li a{
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 0 25px;
+        }
+
+        .hero-header {
+        position: relative;
+        height: 308px;
+        background-image: url("https://i.postimg.cc/tC84rF7p/image-42.png"); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+    .hero-header .helper {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+  .info {
+      color: #ffffff;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+      vertical-align: middle;
+    }
+
+  .info h1 {
+      margin-top: 0;
+      margin-bottom: 100px;
+      font-family: Noto Sans KR;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: center;
+    
+    }
+    #option{
+            height: 175px;
+            width: 1500px;
+            text-align: center;
+            background-color: #FAFAFA;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            position: absolute;
+            top: 200px;
+            left: 100px;
+            box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.25);
+        }
+        #menu2{
+            margin: 0;
+            padding: 0;
+            
+        }
+        #option ul{
+            display: inline-block;
+        }
+        #menu2 li{
+            float: left;
+            list-style-type: none;
+            line-height: 60px;
+            margin: 63px 0;
+        }
+        #menu2 li a{
+            font-size: 20px;
+            font-weight: 500;
+            text-decoration: none;
+            padding: 0 25px;
+            border: solid 1px #ADADAD;
+            border-radius: 24px;
+            line-height: 24px;
+            padding: 5px 20px;
+            margin: 0 30px;
+            
+        }
+        #menu2 li a:hover{
+            color: #F9F9F9;
+            background-color: #121212;
+        }
+
+    #products{
+            width: 1260px;
+            margin-left: auto;
+            margin-right: auto; 
+            margin-top: 170px;
+        }
+        #products p{
+            line-height: 100%;
+        }
+        #products2 p{
+            line-height: 100%;
+        }
+        #products h2{
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 28px;
+            padding-left: 15px;
+            line-height: 28px;
+        }
+        
+        .product-grid{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .product{
+            width:278px;
+            text-decoration:none;
+            display:block;
+            float:left;
+            margin: 0 15px 100px;
+        }
+        .product img{
+            width: 278px;
+            height: 370px;
+            margin-bottom: 14px;
+        }
+        .test{
+            position: relative;
+
+        }
+        .material-symbols-rounded{
+            position: absolute;
+            font-size: 28px;
+            top: 10px;
+            right: 10px;
+        }
+        .material-symbols-rounded:hover{
+            color: #b52626;
+        }
+        .name{
+            font-size: 18px;
+            margin: 0;
+            font-weight: 500;
+        }
+        .price{
+            font-size: 16px;
+            margin-top: 12px;
+            margin-bottom: 22px;
+            font-weight: 700;
+        }
+        .option{
+            font-size: 16px;
+            margin: 0;
+            font-weight: 500;
+            color: #999999;
+        }
+        #footer{
+            margin-top: 110px;
+            clear: left;
+            background-color: #3E3E3E;
+            
+        }        
+        .footer1{
+            
+            height: 60px;
+            padding: 20px 0;
+            border-bottom: solid 1px #5F5F5F;
+        }
+        .align{
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .footer1 a{      
+            color: #F0F0F0;      
+            text-decoration: none;
+            margin-right: 40px;
+        }
+
+        .footer2{
+            height: 254px;
+            padding: 60px 0;
+        
+        }
+        .company{
+            float: left;
+            
+        }
+        
+
+        .company .company-name{
+            margin: 0;
+            color: #C5C5C5;
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 30px;
+        }
+        .company .company-info{
+            margin: 0;
+            padding: 0;
+            margin-top: 20px;
+
+        }
+        span{
+            float: left;
+            list-style-type: none;
+            color: #C5C5C5;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 10px;
+
+        }
+        .border{
+            padding: 0 10px;
+            margin: 0 10px 20px;
+            line-height: 10px;
+            border-left: solid 1px #C5C5C5;
+            border-right: solid 1px #C5C5C5;
+        }
+        .copyright{
+            margin: 0;
+            color: #C5C5C5;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        
+       
+
+        .call{
+            float: right;
+        }
+        .call p{
+            font-size: 12px;
+            color: #C5C5C5;
+
+        }
+        .call .service-center{
+            font-size: 16px;
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+        .call .time{
+            margin: 0;
+            font-size: 12px;
+            font-weight: 400;
+        }
+        .call .center-go{
+            margin: 0;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 500;
+            color: #C5C5C5;
+        }
+</style>
+
+<body>
+    <div id="logo">
+        <div class="test"><a href="#" class="logo">
+            <img src="https://i.postimg.cc/rp9wyDXz/logo.png" alt="logo"></a>
+            <a href=""><span class="material-symbols-outlined">
+                language
+                </span></a>
+            <a href=""><span class="material-symbols-sharp">
+                login
+                </span></a>
+        </div>
+    </div>
+
+    <div id="navbar">
+        
+        <ul id="menu">
+            <li><a href="#">선글라스</a></li>
+            <li><a href="#">안경</a></li>
+            <li><a href="#">콜라보레이션</a></li>
+            <li><a href="#">브랜드이슈</a></li>
+            <li><a href="#">매장보기</a></li>
+        </ul>
+   
+    </div>
+
+    <div class="hero-header">
+
+	    <div class="helper"></div><div class="info">
+	      <h1>Glasses</h1>
+          <div id="option">
+            <ul id="menu2">
+                <li><a href="#">전체보기</a></li>
+                <li><a href="#">베스트셀러</a></li>
+                <li><a href="#">틴트렌즈</a></li>
+                <li><a href="#">선물추천</a></li>
+                <li><a href="#">사각프레임</a></li>
+                <li><a href="#">원형프레임</a></li>
+            </ul>
+          </div>       
+	    </div>
+
+    <div id="products">
+        
+        <div class="product-grid">
+            
+            <a href="#" class="product">
+                <div class="test"><img src="https://i.postimg.cc/FRNNJZzs/1.jpg" alt="">
+                <span class="material-symbols-rounded">
+                    favorite
+                    </span>
+                </div>
+                <p class="name">쿠보 01</p>
+                <p class="price">249,000원</p>
+                <p class="option">+ 4 Colors</p>
+            </a>
+            <a href="#" class="product">
+                <div class="test"><img src="https://i.postimg.cc/mk6sJWwt/2.jpg" alt="">
+                <span class="material-symbols-rounded">
+                    favorite
+                    </span>
+                </div>
+                <p class="name">쿠보 C1</p>
+                <p class="price">249,000원</p>
+                <p class="option">+ 4 Colors</p>
+            </a><a href="#" class="product">
+                <div class="test"><img src="https://i.postimg.cc/Kc9xRt2x/3.jpg" alt="">
+                <span class="material-symbols-rounded">
+                    favorite
+                    </span>
+                </div>
+                <p class="name">루토 C2</p>
+                <p class="price">249,000원</p>
+                <p class="option">+ 4 Colors</p>
+            </a><a href="#" class="product">
+                <div class="test"><img src="https://i.postimg.cc/8P9GbDcY/4.jpg" alt="">
+                <span class="material-symbols-rounded">
+                    favorite
+                    </span>
+                </div>
+                <p class="name">퀸 GDC1</p>
+                <p class="price">479,000원</p>
+                <p class="option">+ 4 Colors</p>
+            </a>         
+        </div>
+        <div class="product-grid">
+            
+            <a href="#" class="product">
+                <div class="test"><img src="https://i.postimg.cc/DzdKFX6V/5.jpg" alt="">
+                <span class="material-symbols-rounded">
+                    favorite
+                    </span>
+                </div>
+                <p class="name">우나씨 N KC1(C)</p>
+                <p class="price">249,000원</p>
+                <p class="option">+ 4 Colors</p>
+            </a>
+            <a href="#" class="product">
+                <div class="test"><img src="https://i.postimg.cc/4dWkHRjB/6.jpg" alt="">
+                <span class="material-symbols-rounded">
+                    favorite
+                    </span>
+                </div>
+                <p class="name">우나씨 N 01(OR)</p>
+                <p class="price">269,000원</p>
+                <p class="option">+ 4 Colors</p>
+            </a><a href="#" class="product">
+                <div class="test"><img src="https://i.postimg.cc/GtfWzJLD/7.jpg" alt="">
+                <span class="material-symbols-rounded">
+                    favorite
+                    </span>
+                </div>
+                <p class="name">우나씨 N KC1</p>
+                <p class="price">269,000원</p>
+                <p class="option">+ 4 Colors</p>
+            </a><a href="#" class="product">
+                <div class="test"><img src="https://i.postimg.cc/y6rCVBmN/8.jpg" alt="">
+                <span class="material-symbols-rounded">
+                    favorite
+                    </span>
+                </div>
+                <p class="name">우나씨 N 01</p>
+                <p class="price">249,000원</p>
+                <p class="option">+ 4 Colors</p>
+            </a>         
+        </div>
+        <div class="product-grid">
+            
+            <a href="#" class="product">
+                <div class="test"><img src="https://i.postimg.cc/Hs7RdMWS/9.jpg" alt="">
+                <span class="material-symbols-rounded">
+                    favorite
+                    </span>
+                </div>
+                <p class="name">제프 BRC1</p>
+                <p class="price">260,000원</p>
+                <p class="option">+ 4 Colors</p>
+            </a>
+            <a href="#" class="product">
+                <div class="test"><img src="https://i.postimg.cc/XYShJvpn/10.jpg" alt="">
+                <span class="material-symbols-rounded">
+                    favorite
+                    </span>
+                </div>
+                <p class="name">제프01</p>
+                <p class="price">260,000원</p>
+                <p class="option">+ 4 Colors</p>
+            </a><a href="#" class="product">
+                <div class="test"><img src="https://i.postimg.cc/XvnzfDfh/11.jpg" alt="">
+                <span class="material-symbols-rounded">
+                    favorite
+                    </span>
+                </div>
+                <p class="name">에디 KC1</p>
+                <p class="price">289,000원</p>
+                <p class="option">+ 4 Colors</p>
+            </a><a href="#" class="product">
+                <div class="test"><img src="https://i.postimg.cc/d0nS4mn0/12.jpg" alt="">
+                <span class="material-symbols-rounded">
+                    favorite
+                    </span>
+                </div>
+                <p class="name">에디 01</p>
+                <p class="price">289,000원</p>
+                <p class="option">+ 4 Colors</p>
+            </a>         
+        </div>
+        <div class="product-grid">
+            
+            <a href="#" class="product">
+                <div class="test"><img src="https://i.postimg.cc/HxxvKcP9/13.jpg" alt="">
+                <span class="material-symbols-rounded">
+                    favorite
+                    </span>
+                </div>
+                <p class="name">에디 A C2</p>
+                <p class="price">249,000원</p>
+                <p class="option">+ 4 Colors</p>
+            </a>
+            <a href="#" class="product">
+                <div class="test"><img src="https://i.postimg.cc/MHfPZkwc/14.jpg" alt="">
+                <span class="material-symbols-rounded">
+                    favorite
+                    </span>
+                </div>
+                <p class="name">에디 A 01</p>
+                <p class="price">249,000원</p>
+                <p class="option">+ 4 Colors</p>
+            </a><a href="#" class="product">
+                <div class="test"><img src="https://i.postimg.cc/Hktg1M3q/15.jpg" alt="">
+                <span class="material-symbols-rounded">
+                    favorite
+                    </span>
+                </div>
+                <p class="name">에디 A KC1</p>
+                <p class="price">249,000원</p>
+                <p class="option">+ 4 Colors</p>
+            </a><a href="#" class="product">
+                <div class="test"><img src="https://i.postimg.cc/bvNjyvBs/16.jpg" alt="">
+                <span class="material-symbols-rounded">
+                    favorite
+                    </span>
+                </div>
+                <p class="name">스윙 M01</p>
+                <p class="price">279,000원</p>
+                <p class="option">+ 4 Colors</p>
+            </a>         
+        </div>
+        
+    </div>
+
+    <div class="clearfix"></div>
+    <div id="footer">
+        <div class="footer1">
+            <div class="align">
+            <a href="#">회사소개</a>
+            <a href="#">제휴제안</a>
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+        </div>
+        </div>
+
+        <div class="footer2">
+            <div class="align">
+        <div class="footer-logo">
+            <img src="https://i.postimg.cc/SxdtT0hc/Vector.png" alt="" height="24px">
+        </div>
+        <div class="company">
+            <p class="company-name">주&#41; 아이아이컴바인드</p>
+            <p class="copyright">Copyrightⓒ2023 GENTLE MONSTER</p>
+            <div class="company-info">
+                <span>대표자명 : 김한국</span>
+                <span class="border">사업자등록번호 : 119-86-38589</span>
+                <span>통신판매업신고 : 제 2014-서울마포-1050 호</span>
+            </div>
+            
+        </div>
+        
+        <div class="call">
+            <p class="service-center">고객센터  02-580-1300</p>
+            <p class="time">운영시간 평일 09:00 ~ 18:00</p>
+            <a href="#" class="center-go">고객센터 바로가기</a>
+        </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
